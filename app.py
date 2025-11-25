@@ -5,7 +5,7 @@ class SimpleServer(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
-        message = "<h1>Harika! Kendi Docker imajindan yayin yapiyorsun!</h1>"
+        message = "<h1>Merhaba Kubernetes - Versiyon 2!</h1>"
         self.wfile.write(message.encode('utf-8'))
 
 def run():
